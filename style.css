@@ -105,10 +105,6 @@ button:hover {
   cursor: pointer;
 }
 
-.play-btn:hover {
-  background-color: rgb(183, 46, 73);
-}
-
 .bottom-container {
   display: flex;
   flex-direction: column;
@@ -124,10 +120,6 @@ button:hover {
   color: #fff;
   padding: 8px;
   cursor: pointer;
-}
-
-.start-btn:hover {
-  background-color: rgb(188, 12, 47);
 }
 
 .selected-move-container {
@@ -181,10 +173,6 @@ button:hover {
   color: #fff;
   font-size: 1.1rem;
   cursor: pointer;
-}
-
-.play-again:hover {
-  background-color: rgb(136, 18, 41);
 }
 
 .flash-messages {
