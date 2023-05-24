@@ -25,7 +25,22 @@ button {
 }
 
 button:hover {
-  background-image: linear-gradient(to right, rgb(250, 82, 82), rgb(250, 82, 82) 16.65%, rgb(190, 75, 219) 16.65%, rgb(190, 75, 219) 33.3%, rgb(76, 110, 245) 33.3%, rgb(76, 110, 245) 49.95%, rgb(64, 192, 87) 49.95%, rgb(64, 192, 87) 66.6%, rgb(250, 176, 5) 66.6%, rgb(250, 176, 5) 83.25%, rgb(253, 126, 20) 83.25%, rgb(253, 126, 20) 100%, rgb(250, 82, 82) 100%);
+  background-image: linear-gradient(
+    to right,
+    rgb(250, 82, 82),
+    rgb(250, 82, 82) 16.65%,
+    rgb(190, 75, 219) 16.65%,
+    rgb(190, 75, 219) 33.3%,
+    rgb(76, 110, 245) 33.3%,
+    rgb(76, 110, 245) 49.95%,
+    rgb(64, 192, 87) 49.95%,
+    rgb(64, 192, 87) 66.6%,
+    rgb(250, 176, 5) 66.6%,
+    rgb(250, 176, 5) 83.25%,
+    rgb(253, 126, 20) 83.25%,
+    rgb(253, 126, 20) 100%,
+    rgb(250, 82, 82) 100%
+  );
   animation: var(--timing) linear dance6123 infinite;
   transform: scale(1.1) translateY(-1px);
 }
@@ -147,6 +162,26 @@ button:hover {
   width: 120px;
 }
 
+.images {
+  transition: transform 0.3s ease;
+}
+
+.images:hover {
+  animation: float 2s infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(0, -10px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
 .my-selected,
 .bot-selected {
   width: 190px;
@@ -180,5 +215,5 @@ button:hover {
 }
 
 .greet p {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
